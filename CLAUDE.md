@@ -109,7 +109,18 @@ Based in Ankara, Turkey · working globally.
 - **`BRIEF.md`** — Original full project brief: design system, copy, sections, quality bar, what NOT to do. The source of truth for any visual/content decision.
 - **`DEPLOY.md`** — Deployment guide: GitHub → Vercel → Metunic DNS → SSL. Step-by-step for first-time deploy.
 - **`WINDOWS-SETUP.md`** — Windows dev environment migration guide: how to clone and run this project on a fresh Windows PC.
+- **`I18N-PLAN.md`** — TR + EN language support plan (NOT yet implemented). Read this before adding i18n.
 - **`AGENTS.md`** — Reminder that Next.js 16 has breaking changes; check `node_modules/next/dist/docs/` before writing Next.js code.
+
+---
+
+## Pending Work / Roadmap
+
+- [ ] **TR + EN language support** (high priority). Browser-language detection for the first-visit default, but with a visible TR / EN toggle in the header that the user can switch any time. Full plan + translation seeds + code patterns are in `I18N-PLAN.md`. When picking this up, read that file first; everything is ready to execute.
+- [ ] Replace project card placeholders in `components/Work.tsx` with real screenshots (target: `public/work/*.png`)
+- [ ] LinkedIn URL — placeholder right now in `components/Contact.tsx` (commented out) and `components/Footer.tsx`. Fill in once the company page is live.
+- [ ] Logo SVG (currently using `public/hlnd-logo.png` — vectorize it)
+- [ ] Favicon & OpenGraph image (`app/icon.png`, `app/opengraph-image.png` — 1200×630 for OG)
 
 ---
 
