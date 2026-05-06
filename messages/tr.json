@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Hopeland Developers — İddialı ekipler için yazılım stüdyosu",
-    "description": "Hopeland Developers; inşaat, sağlık ve yapay zekâ platformlarında üretim seviyesinde sistemler kuran bir yazılım stüdyosudur. Kıdemli mühendislik, esnek teslimat — full-stack veya alanında uzmanlaşmış.",
-    "ogShortDescription": "Kıdemli mühendislik, esnek teslimat. Full-stack ya da alanında uzmanlaşmış — front-end, back-end, mobil."
+    "title": "Hopeland Developers — Hırslı ekiplerin yazılım stüdyosu",
+    "description": "İnşaat, sağlık ve yapay zekâ alanında üretime hazır sistemler kuruyoruz. Kıdemli mühendislik, ihtiyaca göre full-stack ya da tek alan.",
+    "ogShortDescription": "Kıdemli mühendislik, esnek ekip. Full-stack ya da tek alan — front-end, back-end, mobil."
   },
   "header": {
     "wordmark": "Hopeland Devs",
@@ -11,22 +11,22 @@
     "closeMenu": "Menüyü kapat",
     "nav": {
       "capabilities": "Yetkinlikler",
-      "work": "Projeler",
+      "work": "İşlerimiz",
       "contact": "İletişim"
     }
   },
   "hero": {
-    "statusPill": "Yeni projelere açığız · 2026 2.Çeyrek",
-    "headlineLead": "İddialı ekipler için",
+    "statusPill": "Yeni proje alıyoruz · 2026 Q2",
+    "headlineLead": "Hırslı ekiplere",
     "headlineTrail": "yazılım.",
-    "subheadline": "Hopeland Developers; inşaat, sağlık ve yapay zekâ platformlarında üretim seviyesinde sistemler kuran bir yazılım stüdyosu. Kıdemli mühendislik, esnek teslimat — full-stack ya da alanında uzmanlaşmış.",
-    "ctaPrimary": "Projeye başla",
-    "ctaSecondary": "Çalışmalarımıza bak"
+    "subheadline": "İnşaat, sağlık ve yapay zekâ alanında üretime hazır sistemler kuruyoruz. Kıdemli ekip, ihtiyacınıza göre full-stack ya da tek alanda.",
+    "ctaPrimary": "Projeyi başlatalım",
+    "ctaSecondary": "İşlerimize bak"
   },
   "story": {
-    "label": "Hikâyemiz",
-    "heading": "Mart 2023'ten beri müşterilerin vizyonlarını ürüne dönüştürüyoruz.",
-    "body": "Hopeland Developers, 12+ yıllık birebir mühendislik deneyimine dayanır. Önce dinleriz; çözümü probleme göre kurgular, gerektiğinde güvendiğimiz partnerlerle ekibi büyütürüz. İhtiyacınız full-stack teslimat olsun ya da sadece front-end, back-end veya mobil — geleneksel mimaride de yapay zekâ destekli sistemlerde de aynı işçilikle üretim seviyesinde iş çıkarırız.",
+    "label": "Hikâye",
+    "heading": "Mart 2023'ten beri, fikirden canlı ürüne.",
+    "body": "Hopeland Developers'ın temelinde 12 yılı aşkın aktif mühendislik deneyimi var. Önce dinleriz, çözümü soruna göre kurgularız; daha büyük bir ekip gerektiğinde güvendiğimiz partnerlerle yola devam ederiz. İhtiyacınız full-stack teslimat olsun, sadece front-end, back-end ya da mobil — aynı standardı koruruz. Geleneksel mimaride de, yapay zekâ destekli sistemde de.",
     "stats": {
       "products": "Amiral ürün",
       "integrations": "Destekleyici entegrasyon",
@@ -35,12 +35,12 @@
   },
   "capabilities": {
     "label": "Yetkinlikler",
-    "heading": "Keşiften teslimata kadar.",
-    "intro": "Probleminizi getirin. Soruna dokunan her ekibi önce dinler; sonra ihtiyaca uygun sistemi tasarlar, geliştirir ve teslim ederiz. Danışmanlık, geliştirme, teslimat — tek çatı altında.",
+    "heading": "Keşiften canlıya.",
+    "intro": "Sorunu anlatın. Önce dinleriz — ona dokunan her ekiple. Sonra ihtiyaca uygun sistemi tasarlar, geliştirir, teslim ederiz. Danışmanlık, geliştirme, teslimat — hepsi tek çatı altında.",
     "items": {
       "erp": {
         "title": "ERP ve operasyon platformları",
-        "description": "Rol bazlı panellerle çok kiracılı ERP'ler. Sahibinden yöneticiye, işi yapan ekibe kadar herkesle aynı masaya oturur; işin gerçekten ihtiyacı olan modülleri kurarız."
+        "description": "Rol bazlı panellerle çok kiracılı ERP'ler. Sahipten yöneticiye, sahada işi yapan ekibe kadar — herkesle aynı masaya oturur, işin gerçek ihtiyacı olan modülleri kurarız."
       },
       "integrations": {
         "title": "Entegrasyonlar",
@@ -48,86 +48,86 @@
       },
       "marketing": {
         "title": "Pazarlama ve ürün siteleri",
-        "description": "Aynı mühendislik standardında, hızlı ve erişilebilir marka ve ürün siteleri — piksel disiplinli, SEO uyumlu, marka diline sadık."
+        "description": "Aynı mühendislik standardında hızlı ve erişilebilir siteler — piksel disiplinli, SEO uyumlu, marka diline sadık."
       },
       "ai": {
         "title": "Yapay zekâ destekli platformlar",
-        "description": "Öğrenen yapay zekâ altyapısı, konuşma temelli sistemler, akıllı iş akışları — yapay zekâ doğru araç olduğunda."
+        "description": "Öğrenen yapay zekâ altyapısı, konuşma temelli sistemler, akıllı iş akışları — sorun yapay zekâya uygunsa."
       }
     }
   },
   "work": {
-    "label": "Seçilmiş projeler",
-    "heading": "Üretime alınmış sistemler.",
+    "label": "Seçilmiş işler",
+    "heading": "Hayata geçen sistemler.",
     "items": {
       "carechampion": {
         "client": "Digital O'kapi",
         "country": "Birleşik Krallık",
-        "description": "Mobil uyumlu bakım evi yönetim platformu; sakin kayıtlarını, günlük bakım iş akışlarını ve tesisler arası personel operasyonlarını tek noktadan akıcı hâle getirir.",
+        "description": "Mobil uyumlu bakım evi yönetim platformu. Sakin kayıtları, günlük bakım iş akışı ve tesisler arası personel operasyonu — hepsi tek noktadan.",
         "imageAlt": "CareChampion ürün önizlemesi"
       },
       "santiyeler": {
         "client": "Glkr",
         "country": "Türkiye",
-        "description": "Çok kiracılı şantiye ERP'si — web ve rol bazlı panelli mobil uygulamalarla — personel, araç, malzeme, yakıt, ekipman ve hakediş süreçlerini şantiyeler arası yönetir.",
+        "description": "Çok kiracılı şantiye ERP'si. Web ve rol bazlı mobil uygulamalarla; personel, araç, malzeme, yakıt, ekipman ve hakediş — hepsi şantiyeler arası tek panelde.",
         "imageAlt": "Şantiyeler ürün önizlemesi"
       },
       "tulpoo": {
         "client": "Glkr",
         "country": "Türkiye",
-        "description": "Savunma sanayisi için öğrenen yapay zekâ altyapısı üzerine kurulmuş, web ve mobil destekli, role özel panelleri olan iletişim platformu. Detay paylaşımı sınırlı tutulmuştur.",
+        "description": "Savunma sanayisi için, öğrenen yapay zekâ altyapısı üstüne kurulu iletişim platformu. Web ve mobil, role özel paneller. Detay paylaşımı bilinçli olarak sınırlı.",
         "imageAlt": "Tulpoo ürün önizlemesi"
       }
     }
   },
   "approach": {
     "label": "Yaklaşım",
-    "heading": "Probleminize göre şekillenen kıdemli mühendislik.",
-    "body": "Hopeland Developers, Mart 2023'te tek bir ilkeyle kuruldu: her proje teslim edilir. Önce dinler; çözümü probleme göre kurgular, gerektiğinde güvendiğimiz partnerlerle kapasiteyi artırırız. Geleneksel kod tabanları veya yapay zekâ destekli sistemler — hepsinde aynı standardı koruruz.",
+    "heading": "Soruna göre kurgulanan kıdemli mühendislik.",
+    "body": "Hopeland Developers, Mart 2023'te tek bir ilkeyle kuruldu: her proje teslim edilir. Önce dinleriz, çözümü soruna göre kurgularız; daha büyük bir ekip lazım olduğunda güvendiğimiz partnerlerle kapasiteyi büyütürüz. Geleneksel kod tabanı da olsa, yapay zekâ destekli sistem de — aynı standardı koruruz.",
     "bullets": [
       "12+ yıllık kıdemli mühendislik deneyimi",
-      "Probleme göre şekillenen iş kapsamı — full-stack ya da yalnızca front-end / back-end / mobil",
-      "Proje daha fazla kapasite gerektirdiğinde güvenilir dış partnerlerle ekibi hızla büyütme",
-      "Geleneksel mimari ile yapay zekâ destekli sistemlerde eşit işçilik",
-      "Dağıtık saha ekipleri, düzenlemeli sektörler ve kritik iş akışları için üretim seviyesinde sistemler",
-      "Dil ve framework bağımsız; problemin gerçekten ihtiyacı olanı üretiriz"
+      "Soruna göre kurgulanan kapsam — full-stack ya da sadece front-end / back-end / mobil",
+      "Daha büyük ekip lazım olduğunda güvendiğimiz partnerlerle hızla büyürüz",
+      "Geleneksel mimaride de, yapay zekâ destekli sistemde de aynı işçilik",
+      "Dağıtık saha ekipleri, düzenlemeli sektörler ve kritik iş akışları için üretime hazır sistemler",
+      "Dil ve framework bağımsız; sorunun gerçek ihtiyacını üretiriz"
     ]
   },
   "stack": {
     "label": "Teknoloji",
-    "heading": "Temel teknolojilerimiz.",
-    "subhead": "En sık bunlarla çalışıyoruz — ama dil ve framework bağımsızız."
+    "heading": "Çekirdek teknolojilerimiz.",
+    "subhead": "En çok bunlarla çalışıyoruz. Ama dil ve framework bağımsızız."
   },
   "contact": {
     "label": "İletişim",
     "heading": "Bir fikriniz mi var? Konuşalım.",
-    "subhead": "Projenizi anlatın — full-stack teslimat ya da sadece front-end, back-end veya mobil. 1–2 iş günü içinde dönüş yaparız.",
-    "location": "Ankara, Türkiye · küresel olarak çalışıyoruz",
+    "subhead": "Projenizi anlatın — full-stack teslimat ya da sadece front-end, back-end veya mobil. 1–2 iş günü içinde döneriz.",
+    "location": "Ankara · dünyaya çalışıyoruz",
     "fields": {
       "name": "İsim",
       "email": "E-posta",
       "company": "Şirket",
       "message": "Mesaj"
     },
-    "send": "Mesajı gönder",
+    "send": "Gönder",
     "sending": "Gönderiliyor...",
     "success": {
-      "title": "Mesaj alındı.",
-      "body": "Teşekkürler — kısa süre içinde dönüş yapacağız."
+      "title": "Mesaj ulaştı.",
+      "body": "Teşekkürler — yakında döneriz."
     },
     "errors": {
       "missingFields": "Lütfen zorunlu alanları doldurun.",
       "rejected": "E-posta servisi isteği reddetti.",
-      "generic": "Bir şeyler ters gitti. Tekrar deneyin ya da doğrudan e-posta gönderin."
+      "generic": "Bir şeyler ters gitti. Tekrar deneyin ya da doğrudan mail atın."
     }
   },
   "footer": {
     "copyright": "Hopeland Developers © 2026",
-    "madeIn": "Ankara'da yapıldı"
+    "madeIn": "Ankara'dan"
   },
   "email": {
-    "subjectWithCompany": "Yeni proje talebi: {name} ({company})",
-    "subject": "Yeni proje talebi: {name}",
+    "subjectWithCompany": "Yeni proje: {name} ({company})",
+    "subject": "Yeni proje: {name}",
     "bodyTemplate": "İsim: {name}\nE-posta: {email}\nŞirket: {company}\n\nMesaj:\n{message}",
     "companyFallback": "—"
   },
