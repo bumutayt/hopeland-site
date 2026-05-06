@@ -3,19 +3,19 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
+import type { Locale } from "@/i18n/routing";
 
-const navLinks = [
-  { href: "#capabilities", label: "Capabilities", id: "capabilities" },
-  { href: "#work", label: "Work", id: "work" },
-  { href: "#contact", label: "Contact", id: "contact" },
-] as const;
+const navIds = ["capabilities", "work", "contact"] as const;
 
 function Wordmark() {
+  const t = useTranslations("header");
   return (
     <a
       href="#top"
       className="inline-flex items-center gap-2.5 text-foreground"
-      aria-label="Hopeland Developers — home"
+      aria-label={t("homeAriaLabel")}
     >
       <Image
         src="/hlnd-logo.png"
@@ -26,13 +26,60 @@ function Wordmark() {
         className="h-6 w-auto"
       />
       <span className="font-medium tracking-tight text-sm text-white/90">
-        Hopeland Devs
+        {t("wordmark")}
       </span>
     </a>
   );
 }
 
+function LangToggle() {
+  const locale = useLocale();
+  const pathname = usePathname();
+  const router = useRouter();
+  const t = useTranslations("language");
+
+  const switchTo = (next: Locale) => {
+    if (next === locale) return;
+    // pathname starts with /<locale>/... — replace the segment
+    const newPath = pathname.replace(/^\/(en|tr)(?=\/|$)/, `/${next}`);
+    router.push(newPath);
+  };
+
+  return (
+    <div
+      role="group"
+      aria-label={t("switchLabel")}
+      className="inline-flex items-center gap-1 font-mono text-xs"
+    >
+      <button
+        type="button"
+        onClick={() => switchTo("en")}
+        aria-pressed={locale === "en"}
+        className={`px-1 transition-colors ${
+          locale === "en" ? "text-white" : "text-white/40 hover:text-white/70"
+        }`}
+      >
+        {t("en")}
+      </button>
+      <span aria-hidden className="text-white/15">
+        /
+      </span>
+      <button
+        type="button"
+        onClick={() => switchTo("tr")}
+        aria-pressed={locale === "tr"}
+        className={`px-1 transition-colors ${
+          locale === "tr" ? "text-white" : "text-white/40 hover:text-white/70"
+        }`}
+      >
+        {t("tr")}
+      </button>
+    </div>
+  );
+}
+
 export function Header() {
+  const t = useTranslations("header");
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -53,7 +100,7 @@ export function Header() {
       const spyLine = window.innerHeight * 0.25;
       let active: string | null = null;
       let bestTop = -Infinity;
-      for (const { id } of navLinks) {
+      for (const id of navIds) {
         const el = document.getElementById(id);
         if (!el) continue;
         const top = el.getBoundingClientRect().top;
@@ -104,36 +151,42 @@ export function Header() {
         <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
           <Wordmark />
 
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => {
-              const isActive = activeId === link.id;
-              return (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setActiveId(link.id)}
-                  aria-current={isActive ? "true" : undefined}
-                  className={`text-sm transition-colors duration-200 ${
-                    isActive
-                      ? "text-white font-semibold"
-                      : "text-white/55 hover:text-white font-normal"
-                  }`}
-                >
-                  {link.label}
-                </a>
-              );
-            })}
-          </nav>
+          <div className="hidden md:flex items-center gap-8">
+            <nav className="flex items-center gap-8">
+              {navIds.map((id) => {
+                const isActive = activeId === id;
+                return (
+                  <a
+                    key={id}
+                    href={`#${id}`}
+                    onClick={() => setActiveId(id)}
+                    aria-current={isActive ? "true" : undefined}
+                    className={`text-sm transition-colors duration-200 ${
+                      isActive
+                        ? "text-white font-semibold"
+                        : "text-white/55 hover:text-white font-normal"
+                    }`}
+                  >
+                    {t(`nav.${id}`)}
+                  </a>
+                );
+              })}
+            </nav>
+            <LangToggle />
+          </div>
 
-          <button
-            type="button"
-            onClick={() => setOpen(true)}
-            className="md:hidden inline-flex items-center justify-center w-10 h-10 -mr-2 text-white/80 hover:text-white"
-            aria-label="Open menu"
-            aria-expanded={open}
-          >
-            <Menu size={20} strokeWidth={1.75} />
-          </button>
+          <div className="md:hidden flex items-center gap-3">
+            <LangToggle />
+            <button
+              type="button"
+              onClick={() => setOpen(true)}
+              className="inline-flex items-center justify-center w-10 h-10 -mr-2 text-white/80 hover:text-white"
+              aria-label={t("openMenu")}
+              aria-expanded={open}
+            >
+              <Menu size={20} strokeWidth={1.75} />
+            </button>
+          </div>
         </div>
       </header>
 
@@ -153,21 +206,21 @@ export function Header() {
             type="button"
             onClick={() => setOpen(false)}
             className="inline-flex items-center justify-center w-10 h-10 -mr-2 text-white/80 hover:text-white"
-            aria-label="Close menu"
+            aria-label={t("closeMenu")}
             tabIndex={open ? 0 : -1}
           >
             <X size={22} strokeWidth={1.75} />
           </button>
         </div>
         <nav className="flex-1 flex flex-col items-center justify-center gap-2 -mt-16">
-          {navLinks.map((link) => {
-            const isActive = activeId === link.id;
+          {navIds.map((id) => {
+            const isActive = activeId === id;
             return (
               <a
-                key={link.href}
-                href={link.href}
+                key={id}
+                href={`#${id}`}
                 onClick={() => {
-                  setActiveId(link.id);
+                  setActiveId(id);
                   setOpen(false);
                 }}
                 aria-current={isActive ? "true" : undefined}
@@ -178,7 +231,7 @@ export function Header() {
                     : "text-white/75 font-medium hover:text-white"
                 }`}
               >
-                {link.label}
+                {t(`nav.${id}`)}
               </a>
             );
           })}

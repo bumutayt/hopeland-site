@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { ScrollReveal } from "./ScrollReveal";
 
 const stack = [
@@ -14,19 +15,20 @@ const stack = [
 ];
 
 export function Stack() {
+  const t = useTranslations("stack");
+
   return (
     <section id="stack" className="py-24 md:py-32 border-y border-border">
       <div className="mx-auto max-w-6xl px-6">
         <ScrollReveal>
           <p className="text-xs font-medium tracking-[0.2em] text-white/40 uppercase">
-            Stack
+            {t("label")}
           </p>
           <h2 className="mt-4 text-3xl md:text-5xl font-medium tracking-tight text-balance max-w-2xl">
-            Our core technologies.
+            {t("heading")}
           </h2>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-white/55">
-            We work most often with these — but we&apos;re language- and
-            framework-agnostic.
+            {t("subhead")}
           </p>
         </ScrollReveal>
 

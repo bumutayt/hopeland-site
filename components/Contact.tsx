@@ -2,21 +2,8 @@
 
 import { useActionState } from "react";
 import { ArrowRight, Check, Mail, MapPin } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 
-function LinkedInGlyph({ className }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      width="16"
-      height="16"
-      fill="currentColor"
-      aria-hidden
-      className={className}
-    >
-      <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z" />
-    </svg>
-  );
-}
 import {
   sendContactEmail,
   type ContactFormState,
@@ -26,6 +13,8 @@ import { ScrollReveal } from "./ScrollReveal";
 const initialState: ContactFormState = { status: "idle" };
 
 export function Contact() {
+  const t = useTranslations("contact");
+  const locale = useLocale();
   const [state, formAction, isPending] = useActionState(
     sendContactEmail,
     initialState,
@@ -37,15 +26,13 @@ export function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <ScrollReveal className="lg:col-span-5">
             <p className="text-xs font-medium tracking-[0.2em] text-white/40 uppercase">
-              Contact
+              {t("label")}
             </p>
             <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-balance leading-[1.1]">
-              Have an idea? Let&apos;s talk.
+              {t("heading")}
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-white/60">
-              Tell us about your project — full-stack delivery or just
-              front-end, back-end, or mobile. We&apos;ll respond within 1–2
-              business days.
+              {t("subhead")}
             </p>
 
             <ul className="mt-10 space-y-4 text-sm text-white/70">
@@ -58,20 +45,9 @@ export function Contact() {
                   info@hopeland.com.tr
                 </a>
               </li>
-              {/* LinkedIn page not active yet — re-enable when ready:
-              <li>
-                <a
-                  href="#"
-                  className="inline-flex items-center gap-3 hover:text-white transition-colors"
-                >
-                  <LinkedInGlyph className="text-white/50" />
-                  LinkedIn
-                </a>
-              </li>
-              */}
               <li className="inline-flex items-center gap-3 text-white/55">
                 <MapPin size={16} strokeWidth={1.75} className="text-white/50" />
-                Ankara, Turkey · working globally
+                {t("location")}
               </li>
             </ul>
           </ScrollReveal>
@@ -83,10 +59,10 @@ export function Contact() {
                   <Check size={22} strokeWidth={2.5} />
                 </div>
                 <h3 className="mt-6 text-xl font-medium tracking-tight">
-                  Message received.
+                  {t("success.title")}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
-                  {state.message}
+                  {state.message ?? t("success.body")}
                 </p>
               </div>
             ) : (
@@ -95,15 +71,16 @@ export function Contact() {
                 className="rounded-2xl border border-border bg-surface/40 p-6 md:p-8"
                 noValidate
               >
+                <input type="hidden" name="locale" value={locale} />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Field
-                    label="Name"
+                    label={t("fields.name")}
                     name="name"
                     required
                     defaultValue={state.values?.name}
                   />
                   <Field
-                    label="Email"
+                    label={t("fields.email")}
                     name="email"
                     type="email"
                     required
@@ -112,14 +89,14 @@ export function Contact() {
                 </div>
                 <div className="mt-4">
                   <Field
-                    label="Company"
+                    label={t("fields.company")}
                     name="company"
                     defaultValue={state.values?.company}
                   />
                 </div>
                 <div className="mt-4">
                   <Field
-                    label="Message"
+                    label={t("fields.message")}
                     name="message"
                     required
                     multiline
@@ -142,7 +119,7 @@ export function Contact() {
                     disabled={isPending}
                     className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-3 text-sm font-medium hover:bg-white/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    {isPending ? "Sending..." : "Send message"}
+                    {isPending ? t("sending") : t("send")}
                     {!isPending && (
                       <ArrowRight size={16} strokeWidth={2} />
                     )}

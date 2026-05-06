@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "title": "Hopeland Developers — Software studio for ambitious teams",
+    "description": "Hopeland Developers is a software studio shipping production-grade systems across construction, healthcare, and AI platforms. Senior engineering, flexible delivery — full-stack or specialized.",
+    "ogShortDescription": "Senior engineering, flexible delivery. Full-stack or specialized — front-end, back-end, mobile."
+  },
+  "header": {
+    "wordmark": "Hopeland Devs",
+    "homeAriaLabel": "Hopeland Developers — home",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "nav": {
+      "capabilities": "Capabilities",
+      "work": "Work",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "statusPill": "Available for new projects · Q2 2026",
+    "headlineLead": "Software for",
+    "headlineTrail": "ambitious teams.",
+    "subheadline": "Hopeland Developers is a software studio shipping production-grade systems across construction, healthcare, and AI platforms. Senior engineering, flexible delivery — full-stack or specialized.",
+    "ctaPrimary": "Start a project",
+    "ctaSecondary": "See our work"
+  },
+  "story": {
+    "label": "Story",
+    "heading": "Since March 2023, turning client visions into shipped products.",
+    "body": "Hopeland Developers is anchored on 12+ years of hands-on engineering experience. We listen first, design the engagement around the problem, and bring in trusted partners when a project needs a larger team. Whether you need a full-stack delivery — or just front-end, back-end, or mobile — we ship production-grade work, traditional or AI-driven, with the same craft.",
+    "stats": {
+      "products": "Flagship products",
+      "integrations": "Supporting integrations",
+      "marketing": "Marketing sites"
+    }
+  },
+  "capabilities": {
+    "label": "Capabilities",
+    "heading": "From discovery to delivery.",
+    "intro": "Bring us a problem. We listen first — to every team that touches it — then design, build, and ship the system that fits. Advice, development, delivery — under one roof.",
+    "items": {
+      "erp": {
+        "title": "ERP & operations platforms",
+        "description": "Multi-tenant ERPs with role-based dashboards. We sit with every team — owners, managers, the people doing the work — and build the modules the business actually runs on."
+      },
+      "integrations": {
+        "title": "Integrations",
+        "description": "E-invoice, payments, IoT telemetry, third-party APIs. We wire your platform into the systems it needs to talk to — internal or external."
+      },
+      "marketing": {
+        "title": "Marketing & product sites",
+        "description": "Fast, accessible brand and product sites with the same engineering bar — pixel-disciplined, SEO-ready, on-brand."
+      },
+      "ai": {
+        "title": "AI-driven platforms",
+        "description": "Learning AI infrastructure, conversational systems, intelligent workflows — when AI is the right tool for the problem."
+      }
+    }
+  },
+  "work": {
+    "label": "Selected work",
+    "heading": "Production systems, shipped.",
+    "items": {
+      "carechampion": {
+        "client": "Digital O'kapi",
+        "country": "United Kingdom",
+        "description": "Mobile-friendly care home management web platform that streamlines resident records, daily care workflows, and staff operations across facilities.",
+        "imageAlt": "CareChampion product preview"
+      },
+      "santiyeler": {
+        "client": "Glkr",
+        "country": "Turkey",
+        "description": "Multi-tenant construction site ERP — web plus dedicated mobile apps with role-based dashboards — managing personnel, vehicles, materials, fuel, equipment, and progress billing across worksites.",
+        "imageAlt": "Şantiyeler product preview"
+      },
+      "tulpoo": {
+        "client": "Glkr",
+        "country": "Turkey",
+        "description": "Communication platform — web and mobile — built on a learning AI infrastructure for the defense industry, with role-specific dashboards. Public detail intentionally limited.",
+        "imageAlt": "Tulpoo product preview"
+      }
+    }
+  },
+  "approach": {
+    "label": "Approach",
+    "heading": "Senior engineering, shaped to your problem.",
+    "body": "Hopeland Developers was founded in March 2023 with one principle: every project ships. We listen first, design the engagement around the problem, and bring in trusted partners when a project needs more capacity. Traditional codebases or AI-driven systems, we hold the same bar.",
+    "bullets": [
+      "12+ years of senior engineering experience",
+      "Engagement shaped to the problem — full-stack, or front-end / back-end / mobile only",
+      "Scale teams quickly with trusted external partners when a project demands more capacity",
+      "Equal craft for traditional architectures and AI-driven systems",
+      "Production systems for distributed field teams, regulated industries, and mission-critical workflows",
+      "Language- and framework-agnostic; we ship what the problem actually needs"
+    ]
+  },
+  "stack": {
+    "label": "Stack",
+    "heading": "Our core technologies.",
+    "subhead": "We work most often with these — but we're language- and framework-agnostic."
+  },
+  "contact": {
+    "label": "Contact",
+    "heading": "Have an idea? Let's talk.",
+    "subhead": "Tell us about your project — full-stack delivery or just front-end, back-end, or mobile. We'll respond within 1–2 business days.",
+    "location": "Ankara, Turkey · working globally",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Message"
+    },
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": {
+      "title": "Message received.",
+      "body": "Thanks — we'll be in touch shortly."
+    },
+    "errors": {
+      "missingFields": "Please fill in all required fields.",
+      "rejected": "Email service rejected the request.",
+      "generic": "Something went wrong. Please try again or email us directly."
+    }
+  },
+  "footer": {
+    "copyright": "Hopeland Developers © 2026",
+    "madeIn": "Made in Ankara"
+  },
+  "email": {
+    "subjectWithCompany": "New project inquiry from {name} ({company})",
+    "subject": "New project inquiry from {name}",
+    "bodyTemplate": "Name: {name}\nEmail: {email}\nCompany: {company}\n\nMessage:\n{message}",
+    "companyFallback": "—"
+  },
+  "language": {
+    "switchLabel": "Language",
+    "en": "EN",
+    "tr": "TR"
+  }
+}

@@ -1,6 +1,9 @@
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section
       id="top"
@@ -18,19 +21,16 @@ export function Hero() {
               <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping opacity-60" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400" />
             </span>
-            Available for new projects · Q2 2026
+            {t("statusPill")}
           </div>
 
           <h1 className="mt-8 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-[1.02] text-balance">
-            Software for{" "}
-            <span className="text-white/60">ambitious teams.</span>
+            {t("headlineLead")}{" "}
+            <span className="text-white/60">{t("headlineTrail")}</span>
           </h1>
 
           <p className="mt-8 max-w-2xl text-base md:text-lg leading-relaxed text-white/60">
-            Hopeland Developers is a software studio shipping
-            production-grade systems across construction, healthcare, and
-            AI platforms. Senior engineering, flexible delivery —
-            full-stack or specialized.
+            {t("subheadline")}
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-3">
@@ -38,7 +38,7 @@ export function Hero() {
               href="#contact"
               className="group inline-flex items-center gap-2 rounded-full bg-foreground text-background px-5 py-3 text-sm font-medium hover:bg-white/90 transition-colors"
             >
-              Start a project
+              {t("ctaPrimary")}
               <ArrowRight
                 size={16}
                 strokeWidth={2}
@@ -49,7 +49,7 @@ export function Hero() {
               href="#work"
               className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-3 text-sm font-medium text-white hover:border-white/30 transition-colors"
             >
-              See our work
+              {t("ctaSecondary")}
             </a>
           </div>
         </div>
