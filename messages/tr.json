@@ -1,8 +1,8 @@
 {
   "meta": {
-    "title": "Hopeland Developers — Hırslı ekiplerin yazılım stüdyosu",
-    "description": "İnşaat, sağlık ve yapay zekâ alanında üretime hazır sistemler kuruyoruz. Kıdemli mühendislik, ihtiyaca göre full-stack ya da tek alan.",
-    "ogShortDescription": "Kıdemli mühendislik, esnek ekip. Full-stack ya da tek alan — front-end, back-end, mobil."
+    "title": "Hopeland Developers — Hırslı ekiplere yazılım",
+    "description": "İnşaat, sağlık ve yapay zekâ. Üretim ortamında çalışan sistemler kuruyoruz. Kıdemli ekip, ihtiyaca göre full-stack ya da tek alan.",
+    "ogShortDescription": "Kıdemli ekip, esnek kapsam. Full-stack veya tek alan."
   },
   "header": {
     "wordmark": "Hopeland Devs",
@@ -11,22 +11,22 @@
     "closeMenu": "Menüyü kapat",
     "nav": {
       "capabilities": "Yetkinlikler",
-      "work": "İşlerimiz",
+      "work": "İşler",
       "contact": "İletişim"
     }
   },
   "hero": {
-    "statusPill": "Yeni proje alıyoruz · 2026 Q2",
+    "statusPill": "2026 Q2 için takvim açık",
     "headlineLead": "Hırslı ekiplere",
     "headlineTrail": "yazılım.",
-    "subheadline": "İnşaat, sağlık ve yapay zekâ alanında üretime hazır sistemler kuruyoruz. Kıdemli ekip, ihtiyacınıza göre full-stack ya da tek alanda.",
-    "ctaPrimary": "Projeyi başlatalım",
-    "ctaSecondary": "İşlerimize bak"
+    "subheadline": "İnşaat, sağlık ve yapay zekâ alanlarına; üretim ortamında çalışan sistemler kuruyoruz. Kıdemli ekip; ihtiyacınıza göre full-stack ya da tek alanda.",
+    "ctaPrimary": "Konuşalım",
+    "ctaSecondary": "İşlere bak"
   },
   "story": {
     "label": "Hikâye",
-    "heading": "Mart 2023'ten beri, fikirden canlı ürüne.",
-    "body": "Hopeland Developers'ın temelinde 12 yılı aşkın aktif mühendislik deneyimi var. Önce dinleriz, çözümü soruna göre kurgularız; daha büyük bir ekip gerektiğinde güvendiğimiz partnerlerle yola devam ederiz. İhtiyacınız full-stack teslimat olsun, sadece front-end, back-end ya da mobil — aynı standardı koruruz. Geleneksel mimaride de, yapay zekâ destekli sistemde de.",
+    "heading": "Mart 2023'ten beri sahada.",
+    "body": "Temelde 12 yılı aşkın aktif mühendislik var. Önce dinler, sonra kurarız. Geniş ekip lazım olduğunda güvendiğimiz partnerlerle yürürüz. Full-stack ya da tek alan; geleneksel kod ya da yapay zekâ destekli sistem — fark etmez, aynı standart.",
     "stats": {
       "products": "Amiral ürün",
       "integrations": "Destekleyici entegrasyon",
@@ -36,72 +36,72 @@
   "capabilities": {
     "label": "Yetkinlikler",
     "heading": "Keşiften canlıya.",
-    "intro": "Sorunu anlatın. Önce dinleriz — ona dokunan her ekiple. Sonra ihtiyaca uygun sistemi tasarlar, geliştirir, teslim ederiz. Danışmanlık, geliştirme, teslimat — hepsi tek çatı altında.",
+    "intro": "Sorunu anlatın. Ona dokunan her ekiple ayrı ayrı oturur, dinleriz. Sonra ihtiyaca uygun sistemi tasarlar, geliştirir, teslim ederiz. Danışmanlık, geliştirme, teslimat — tek çatı altında.",
     "items": {
       "erp": {
         "title": "ERP ve operasyon platformları",
-        "description": "Rol bazlı panellerle çok kiracılı ERP'ler. Sahipten yöneticiye, sahada işi yapan ekibe kadar — herkesle aynı masaya oturur, işin gerçek ihtiyacı olan modülleri kurarız."
+        "description": "Rol bazlı panellerle çok kiracılı ERP'ler. Sahibinden yöneticiye, sahada işi yapan operatöre — herkesle aynı masaya oturur, işin asıl modüllerini kurarız."
       },
       "integrations": {
         "title": "Entegrasyonlar",
-        "description": "E-fatura, ödeme, IoT telemetrisi, üçüncü taraf API'ler. Platformunuzu konuşması gereken iç ve dış sistemlere bağlarız."
+        "description": "E-fatura, ödeme, IoT telemetrisi, üçüncü taraf API'ler. Konuşması gereken iç ve dış sistemleri konuştururuz."
       },
       "marketing": {
         "title": "Pazarlama ve ürün siteleri",
-        "description": "Aynı mühendislik standardında hızlı ve erişilebilir siteler — piksel disiplinli, SEO uyumlu, marka diline sadık."
+        "description": "Marka ve ürün siteleri. Aynı mühendislik standardı: hızlı, erişilebilir, marka diline sadık."
       },
       "ai": {
         "title": "Yapay zekâ destekli platformlar",
-        "description": "Öğrenen yapay zekâ altyapısı, konuşma temelli sistemler, akıllı iş akışları — sorun yapay zekâya uygunsa."
+        "description": "Öğrenen yapay zekâ altyapıları, konuşma temelli sistemler, akıllı iş akışları — yapay zekâ doğru araçsa."
       }
     }
   },
   "work": {
-    "label": "Seçilmiş işler",
-    "heading": "Hayata geçen sistemler.",
+    "label": "İşler",
+    "heading": "Sahaya inen sistemler.",
     "items": {
       "carechampion": {
         "client": "Digital O'kapi",
         "country": "Birleşik Krallık",
-        "description": "Mobil uyumlu bakım evi yönetim platformu. Sakin kayıtları, günlük bakım iş akışı ve tesisler arası personel operasyonu — hepsi tek noktadan.",
+        "description": "Mobil uyumlu bakım evi yönetim platformu. Sakin kayıtları, günlük bakım iş akışı, tesisler arası personel operasyonu — hepsi tek panelde.",
         "imageAlt": "CareChampion ürün önizlemesi"
       },
       "santiyeler": {
         "client": "Glkr",
         "country": "Türkiye",
-        "description": "Çok kiracılı şantiye ERP'si. Web ve rol bazlı mobil uygulamalarla; personel, araç, malzeme, yakıt, ekipman ve hakediş — hepsi şantiyeler arası tek panelde.",
+        "description": "Çok kiracılı şantiye ERP'si. Web ve rol bazlı mobil uygulamalarla personel, araç, malzeme, yakıt, ekipman ve hakediş — şantiyeler arası tek panelde.",
         "imageAlt": "Şantiyeler ürün önizlemesi"
       },
       "tulpoo": {
         "client": "Glkr",
         "country": "Türkiye",
-        "description": "Savunma sanayisi için, öğrenen yapay zekâ altyapısı üstüne kurulu iletişim platformu. Web ve mobil, role özel paneller. Detay paylaşımı bilinçli olarak sınırlı.",
+        "description": "Savunma sanayisi için iletişim platformu. Öğrenen yapay zekâ altyapısı üstüne kurulu; web ve mobil, role özel paneller. Detay paylaşımı bilinçli olarak sınırlı.",
         "imageAlt": "Tulpoo ürün önizlemesi"
       }
     }
   },
   "approach": {
     "label": "Yaklaşım",
-    "heading": "Soruna göre kurgulanan kıdemli mühendislik.",
-    "body": "Hopeland Developers, Mart 2023'te tek bir ilkeyle kuruldu: her proje teslim edilir. Önce dinleriz, çözümü soruna göre kurgularız; daha büyük bir ekip lazım olduğunda güvendiğimiz partnerlerle kapasiteyi büyütürüz. Geleneksel kod tabanı da olsa, yapay zekâ destekli sistem de — aynı standardı koruruz.",
+    "heading": "Soruna göre, kıdemli mühendislik.",
+    "body": "Hopeland Developers, Mart 2023'te tek ilkeyle kuruldu: her proje teslim edilir. Önce dinler, çözümü soruna göre kurgular; daha geniş ekip lazımsa güvendiğimiz partnerlerle yürürüz. Geleneksel kod, yapay zekâ destekli sistem — aynı standart.",
     "bullets": [
-      "12+ yıllık kıdemli mühendislik deneyimi",
-      "Soruna göre kurgulanan kapsam — full-stack ya da sadece front-end / back-end / mobil",
-      "Daha büyük ekip lazım olduğunda güvendiğimiz partnerlerle hızla büyürüz",
-      "Geleneksel mimaride de, yapay zekâ destekli sistemde de aynı işçilik",
-      "Dağıtık saha ekipleri, düzenlemeli sektörler ve kritik iş akışları için üretime hazır sistemler",
-      "Dil ve framework bağımsız; sorunun gerçek ihtiyacını üretiriz"
+      "12+ yıllık aktif mühendislik",
+      "Soruna göre kapsam — full-stack ya da tek alan",
+      "Partner ağıyla hızla büyürüz",
+      "Geleneksel mimari ya da yapay zekâ destekli sistem — aynı işçilik",
+      "Saha ekipleri, regüle sektörler, kritik iş akışları için üretime hazır",
+      "Dil ve framework bağımsız; sorunun istediğini üretiriz"
     ]
   },
   "stack": {
     "label": "Teknoloji",
     "heading": "Çekirdek teknolojilerimiz.",
-    "subhead": "En çok bunlarla çalışıyoruz. Ama dil ve framework bağımsızız."
+    "subhead": "En çok bunlarla. Ama dil ve framework bağımsızız."
   },
   "contact": {
     "label": "İletişim",
     "heading": "Bir fikriniz mi var? Konuşalım.",
-    "subhead": "Projenizi anlatın — full-stack teslimat ya da sadece front-end, back-end veya mobil. 1–2 iş günü içinde döneriz.",
+    "subhead": "Anlatın — full-stack ya da tek alan, hepsi olur. 1–2 iş günü içinde döneriz.",
     "location": "Ankara · dünyaya çalışıyoruz",
     "fields": {
       "name": "İsim",
@@ -117,7 +117,7 @@
     },
     "errors": {
       "missingFields": "Lütfen zorunlu alanları doldurun.",
-      "rejected": "E-posta servisi isteği reddetti.",
+      "rejected": "E-posta servisi reddetti.",
       "generic": "Bir şeyler ters gitti. Tekrar deneyin ya da doğrudan mail atın."
     }
   },
